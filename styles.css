@@ -13,7 +13,7 @@ header {
 nav {
   background-color: #4e342e;
   padding: 10px;
-  display: flex;
+  display: flex;  
   gap: 20px;
 }
 
@@ -57,4 +57,21 @@ button {
 
 footer {
   padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 12px;
+  }
+
 }
