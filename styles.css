@@ -13,14 +13,21 @@ header {
 nav {
   background-color: #4e342e;
   padding: 10px;
-  display: flex;  
+}
+
+nav ul {
+  display: flex;
   gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
 }
+
 
 main {
   padding: 20px;
@@ -59,11 +66,32 @@ footer {
   padding-left: 20px;
 }
 
-@media (max-width: 600px) {
+#menu {
+  display: none;
+}
 
+
+@media (max-width: 600px) {
   nav {
     flex-direction: column;
     gap: 10px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul.abierto {
+    display: flex;
   }
 
   main {
@@ -73,5 +101,4 @@ footer {
   section {
     padding: 12px;
   }
-
 }
