@@ -49,6 +49,14 @@ form {
   nav ul {
     display: block;
   }
+  body {
+  padding: 20px;
+}
+section {
+  margin: 0px;
+  bottom: 20px;
+
+}
 
 }
 
