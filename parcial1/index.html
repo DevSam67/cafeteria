@@ -18,7 +18,7 @@
   <button id="menu" type="button">☰ Menú</button>
 
   <ul id="menu-list">
-    <li><a href="##lavados">Productos</a></li>
+    <li><a href="#lavados">Productos</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
@@ -39,28 +39,26 @@
   </section>
 
   <section id="contacto">
-  <h2>Contacto</h2>
-  <p>Encuentra nuestros medios de contacto.</p>
+  <h2>Deja tu encargo</h2>
 
   <form>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre">
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
     <label for="correo">Correo:</label>
-    <input type="email" id="correo" name="correo">
+    <input type="email" id="correo" name="correo" required>
+    <label for="encargo">Tu encargo:</label>
+    <textarea id="encargo" name="encargo"></textarea>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje"></textarea>
+    </form>
 
-    <button type="submit">Enviar</button>
-    <p id="mensaje"></p>
-
-  </form>
+    <button type="button" id="btn-confirmar">Confirmar encargo</button>
+    <p id="mensaje" class="oculto"></p>
 </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 examen by Samuel Canedo Caballero"</p>
+  <p>Parcial 1 - samuel canedo caballero - 12 de octubre de 2026</p>
 </footer>
 <script src="script.js"></script>
 </body>
