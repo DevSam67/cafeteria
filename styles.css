@@ -71,6 +71,7 @@ footer {
 
 .aviso{
   display: none;
+  margin-top: 14px;
 }
 
 .aviso.error{
