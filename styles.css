@@ -69,6 +69,20 @@ footer {
   display: none;
 }
 
+.aviso{
+  display: none;
+}
+
+.aviso.error{
+  display: block;
+  color: #b3261e
+}
+
+.aviso.exito{
+  display: block;
+  color: #1a7f4f
+}
+
 
 @media (max-width: 600px) {
   nav {
