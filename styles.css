@@ -69,19 +69,23 @@ footer {
   display: none;
 }
 
-.aviso{
+.aviso {
   display: none;
   margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
 }
 
-.aviso.error{
+.aviso.error {
   display: block;
-  color: #b3261e
+  color: #b3261e;
+  background-color: #fde8e7;
 }
 
-.aviso.exito{
+.aviso.exito {
   display: block;
-  color: #1a7f4f
+  color: #1a7f4f;
+  background-color: #e6f4ed;
 }
 
 
