@@ -38,41 +38,38 @@
     <h2>Productos</h2>
     <p>Conoce nuestro catálogo de productos.</p>
 
-    <ul>
-      <li>Café</li>
-      <li>Capuchino</li>
-      <li>Pastel</li>
-    </ul>
+    <ul id="menu-salteñas"></ul>
+
   </section>
 
   <section>
     <h2>Sobre nosotros</h2>
-    <p>Conoce más sobre nuestra cafetería.</p>
+    <p>Te atiende samuel canedo caballero.</p>
   </section>
 
   <section>
   <h2>Contacto</h2>
   <p>Encuentra nuestros medios de contacto.</p>
 
-  <form id="form-horno" action="procesar.php" method="post" novalidate>
+  <form id="form-horno" novalidate method="POST" action="procesar.php">
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-    <label for="correo">Correo:</label>
-    <input type="email" id="correo" name="correo">
+    <label for="correo">Correo electronico:</label>
+    <input type="email" id="correo" name="correo" required>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje"></textarea>
+    <label for="mensaje">Que saltenas queres:</label>
+    <textarea id="pedido" name="pedido"></textarea>
 
-    <button type="submit">Enviar</button>
-    <p id="aviso-contacto" class="aviso"></p>
+    <button type="submit">Hacer mi pedido</button>
+    <p id="aviso-horno" class="aviso"></p>
   </form>
 </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 Cafetería Cochala by Samuel Canedo Caballero"</p>
+  <p>Parcial 2 - Samuel Canedo Caballero - 20 de octubre de 2026</p>
 </footer>
 <script src="script.js"></script>
 </body>
