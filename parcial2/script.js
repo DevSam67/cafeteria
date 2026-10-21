@@ -50,16 +50,5 @@ function revisarPedido(event) {
     }
 }
 
-let carta = [
-  "Salteña de pollo - Bs 6",
-  "Docena de salteñas - Bs 65",
-  "Refresco de mocochinchi - Bs 5"
-];
-
-let lista = document.getElementById("menu-salteñas");
-
-carta.forEach(function(producto) {
-  lista.innerHTML += "<li>" + producto + "</li>";
-});
 
 formularioPedido.addEventListener("submit", revisarPedido);
