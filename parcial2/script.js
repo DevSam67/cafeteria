@@ -25,11 +25,11 @@ const avisoPedido = document.querySelector("#aviso-horno");
 function revisarPedido(event) {
     const nombre = document.querySelector("#nombre").value;
     const correo = document.querySelector("#correo").value;
-    const pedido = document.querySelector("#correo").value;
+    const pedido = document.querySelector("#pedido").value;
 
 
-    if (nombre === "") {
-        avisoPedido.textContent = "Falta tu nombre, caserito.";
+    if (nombre === "" || correo === "") {
+        avisoPedido.textContent = "Sin tu nombre y tu correo no anotamos el pedido.";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
         event.preventDefault();
@@ -38,8 +38,13 @@ function revisarPedido(event) {
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
         event.preventDefault();
+    } else if (pedido === "") {
+        avisoPedido.textContent = "Por favor agregue un pedido";
+        avisoPedido.classList.add("error");
+        avisoPedido.classList.remove("exito");
+        event.preventDefault();  
     } else {
-        avisoPedido.textContent = "Pedido recibido, caserito. Te contactamos hoy.";
+        avisoPedido.textContent = "Pedido recibido caserito";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
     }
