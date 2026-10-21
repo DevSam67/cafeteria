@@ -44,7 +44,7 @@ function revisarPedido(event) {
         avisoPedido.classList.remove("exito");
         event.preventDefault();  
     } else {
-        avisoPedido.textContent = "Pedido recibido caserito";
+        avisoPedido.textContent = "Pedido recibido caserito Samuel Canedo Caballero";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
     }
