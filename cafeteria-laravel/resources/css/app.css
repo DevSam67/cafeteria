@@ -1,0 +1,155 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body {
+  background-color: #f5f0e8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #6f4e37;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: #6f4e37;
+  color: white;
+}
+
+footer {
+  padding-left: 20px;
+}
+
+#menu {
+  display: none;
+}
+
+.aviso {
+  display: none;
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.aviso.error {
+  display: block;
+  color: #b3261e;
+  background-color: #fde8e7;
+}
+
+.aviso.exito {
+  display: block;
+  color: #1a7f4f;
+  background-color: #e6f4ed;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul.abierto {
+    display: flex;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 12px;
+  }
+
+}
+
+/* Modo oscuro */
+body.oscuro {
+  background-color: #222;
+  color: white;
+}
+
+body.oscuro section {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.oscuro input,
+body.oscuro textarea {
+  background-color: #444;
+  color: white;
+  border-color: #666;
+}
+#tema {
+  margin-bottom: 10px;
+  border: 1px solid #4e342e;
+}
