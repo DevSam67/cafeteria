@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería Cochala</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+
+<header>
+  <h1>Cafetería Cochala</h1>
+
+  <nav>
+
+  <button id="tema" type="button">🌙 Modo oscuro</button>
+ 
+  <button id="menu" type="button">☰ Menú</button>
+
+  <ul id="menu-list">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+
+  <section>
+    <p>Bienvenidos a nuestra cafetería.</p>
+  </section>
+
+  <section>
+    <h2>Productos</h2>
+    <p>Conoce nuestro catálogo de productos.</p>
+
+    <ul>
+      <li>Café</li>
+      <li>Capuchino</li>
+      <li>Pastel</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sobre nosotros</h2>
+    <p>Conoce más sobre nuestra cafetería.</p>
+  </section>
+
+  <section>
+  <h2>Contacto</h2>
+  <p>Encuentra nuestros medios de contacto.</p>
+
+  <form id="form-contacto" action="procesar.php" method="post" novalidate>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje"></textarea>
+
+    <button type="submit">Enviar</button>
+    <p id="aviso-contacto" class="aviso"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Cafetería Cochala by Samuel Canedo Caballero"</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
