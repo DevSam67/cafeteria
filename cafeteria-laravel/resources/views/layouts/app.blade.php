@@ -2,16 +2,41 @@
 <html lang="es">
 
 <head>
-    ...
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@yield('title', 'Cafetería Cochala')</title>
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
 
     <header>
-        ...
+        <h1>Cafetería Cochala</h1>
+
         <nav>
-            ...
+            <button id="tema" type="button">🌙 Modo oscuro</button>
+
+            <button id="menu" type="button">☰ Menú</button>
+
+            <ul id="menu-list">
+                <li>
+                    <a href="{{ route('inicio') }}">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="{{ route('productos') }}">Productos</a>
+                </li>
+
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -20,10 +45,9 @@
     </main>
 
     <footer>
-        ...
+        <p>&copy; 2026 Cafetería Cochala by Samuel Canedo Caballero</p>
     </footer>
 
-    <script src="{{ asset('js/script.js') }}"></script>
-
 </body>
+
 </html>
