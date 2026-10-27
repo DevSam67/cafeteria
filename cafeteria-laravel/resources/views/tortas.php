@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Inicio - Cafetería Cochala')
+@section('title', 'PASTELERIA LA ESPIGA')
 
 @section('content')
 
 <section>
-    <p>Bienvenidos a nuestra cafetería.</p>
+    <p>Bienvenidos a la pasteleria la espiga, si quieres pasteles
+         en nuestra pasteleria encontraras una gran variedad
+    </p>
 </section>
 
 <section>
@@ -14,9 +16,11 @@
     <p>Conoce nuestro catálogo de productos.</p>
 
     <ul>
-        <li>Café</li>
-        <li>Capuchino</li>
-        <li>Pastel</li>
+        @foreach ($tortas as $torta)
+            <li>
+                {{ $torta->nombre }}
+            </li>
+        @endforeach
     </ul>
 </section>
 

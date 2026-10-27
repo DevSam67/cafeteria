@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <h1>Cafetería Cochala</h1>
+        <h1>PASTELERIA LA ESPIGA</h1>
 
         <nav>
             <button id="tema" type="button">🌙 Modo oscuro</button>

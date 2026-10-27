@@ -70,3 +70,11 @@ Route::post('/logout', function () {
     return redirect()->route('inicio');
 
 })->name('logout');
+
+Route::get('/tortas', function () {
+
+    $tortas = Torta::all();
+
+    return view('tortas', compact('tortas'));
+
+})->name('tortas');
