@@ -40,6 +40,8 @@ function revisarPedido(event) {
         avisoPedido.textContent = "Pedido recibido, caserito. Te contactamos hoy.";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
+                event.preventDefault();
+
     }
 }
 

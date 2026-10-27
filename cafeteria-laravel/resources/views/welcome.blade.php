@@ -34,7 +34,7 @@
 
     <p>Envíanos un mensaje.</p>
 
-    <form id="form-contacto" action="#" method="post" novalidate>
+    <form id="form-contacto" action="#" novalidate>
 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">

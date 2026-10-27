@@ -153,3 +153,16 @@ body.oscuro textarea {
   margin-bottom: 10px;
   border: 1px solid #4e342e;
 }
+
+.login {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.login h2 {
+    text-align: center;
+}
+
+.login button {
+    margin-top: 10px;
+}
