@@ -45,7 +45,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Cafetería Cochala by Samuel Canedo Caballero</p>
+        <p>Integradora - Samuel Canedo Caballero - 27 de octubre de 2026</p>
     </footer>
 
 </body>

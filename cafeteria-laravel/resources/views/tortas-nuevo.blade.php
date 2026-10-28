@@ -12,10 +12,10 @@
         @csrf
 
         <label for="nombre">Sabor:</label>
-        <input type="text" id="nombre" name="sabor">
+        <input type="text" id="sabor" name="sabor">
 
         <label for="precio">Precio:</label>
-        <input type="text" id="precio" name="precio">
+        <input type="number" id="precio" name="precio">
 
         <button type="submit">Guardar producto</button>
 
