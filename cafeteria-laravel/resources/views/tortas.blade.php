@@ -11,14 +11,14 @@
 </section>
 
 <section>
-    <h2>Productos</h2>
+    <h2>Tortas</h2>
 
-    <p>Conoce nuestro catálogo de productos.</p>
+    <p>Hay {{ count($tortas) }} tortas en la vitrina.</p>
 
     <ul>
         @foreach ($tortas as $torta)
             <li>
-                {{ $torta->nombre }}
+                {{ $torta->sabor }} - {{ $torta->precio }}
             </li>
         @endforeach
     </ul>

@@ -1,5 +1,6 @@
 <?php
 use App\Models\Producto;
+use App\Models\Torta;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -78,3 +79,20 @@ Route::get('/tortas', function () {
     return view('tortas', compact('tortas'));
 
 })->name('tortas');
+
+Route::get('/tortas/nuevo', function () {
+    return view('tortas-nuevo');
+})->name('tortas.nuevo');
+
+Route::post('/tortas', function () {
+
+    $datos = request()->validate([
+        'sabor' => 'required|string',
+        'precio' => 'required|integer',
+    ]);
+
+    Torta::create($datos);
+
+    return redirect()->route('tortas');
+
+})->name    ('tortas.guardar');
