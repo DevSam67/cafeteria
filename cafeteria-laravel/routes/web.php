@@ -89,10 +89,15 @@ Route::post('/tortas', function () {
     $datos = request()->validate([
         'sabor' => 'required|string',
         'precio' => 'required|integer',
+    ],[
+        'sabor.required' => 'Debes ingresar el sabor de la torta.',
+        'sabor.string' => 'El sabor debe ser texto.',
+        'precio.required' => 'Debes ingresar el precio.',
+        'precio.integer' => 'El precio debe ser un número entero.',
     ]);
 
     Torta::create($datos);
 
     return redirect()->route('tortas');
 
-})->name    ('tortas.guardar');
+})->name('tortas.guardar');
