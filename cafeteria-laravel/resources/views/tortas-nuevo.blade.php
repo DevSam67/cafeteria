@@ -15,7 +15,7 @@
         <input type="text" id="nombre" name="sabor">
 
         <label for="precio">Precio:</label>
-        <input type="number" id="precio" name="precio">
+        <input type="text" id="precio" name="precio">
 
         <button type="submit">Guardar producto</button>
 

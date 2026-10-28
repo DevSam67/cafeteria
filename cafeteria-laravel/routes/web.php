@@ -90,10 +90,9 @@ Route::post('/tortas', function () {
         'sabor' => 'required|string',
         'precio' => 'required|integer',
     ],[
-        'sabor.required' => 'Debes ingresar el sabor de la torta.',
-        'sabor.string' => 'El sabor debe ser texto.',
-        'precio.required' => 'Debes ingresar el precio.',
-        'precio.integer' => 'El precio debe ser un número entero.',
+        'sabor.required' => 'Indica el sabor de la torta.',
+        'precio.required' => 'Indica el precio de la torta.',
+        'precio.integer' => 'El precio va en digitos, sin centavos.',
     ]);
 
     Torta::create($datos);
