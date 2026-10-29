@@ -15,7 +15,7 @@ COPY . /var/www/html
 WORKDIR /var/www/html
 RUN touch database/database.sqlite
 RUN composer install --no-dev --optimize-autoloader
-
+RUN php artisan migrate --force
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs
 
