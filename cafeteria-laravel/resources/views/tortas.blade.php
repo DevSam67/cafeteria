@@ -22,7 +22,7 @@
         </br>
         @foreach ($tortas as $torta)
             <li>
-                {{ $torta->sabor }} - {{ $torta->precio }}
+                {{ $torta->sabor }} - {{ $torta->precio }} - {{ $torta->stock }}
             </li>
         @endforeach
     </ul>
