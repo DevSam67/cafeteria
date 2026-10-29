@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <h1>PASTELERIA LA ESPIGA</h1>
+        <h1>Cafeteria Cochala</h1>
 
         <nav>
             <button id="tema" type="button">🌙 Modo oscuro</button>
@@ -45,7 +45,7 @@
     </main>
 
     <footer>
-        <p>Integradora - Samuel Canedo Caballero - 27 de octubre de 2026</p>
+        <p> 2026 Samuel Canedo Caballero - Todos los derechos Reservados</p>
     </footer>
 
 </body>
