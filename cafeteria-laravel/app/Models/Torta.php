@@ -9,5 +9,6 @@ class Torta extends Model
     protected $fillable = [
         'sabor',
         'precio',
+        'stock',
     ];
 }
